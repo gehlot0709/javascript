@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Comparing numbers
+      console.log(2 > 1);  // true: 2 is greater than 1
+      console.log(2 >= 1); // true: 2 is greater than or equal to 1
+      console.log(2 < 1);  // false: 2 is not less than 1
+      console.log(2 == 1); // false: 2 is not equal to 1
+      console.log(2 != 1); // true: 2 is not equal to 1
+
+      // Comparing a string with a number
+      console.log("2" > 1);  // true: "2" is converted to a number (2) before comparison
+
+      // Comparisons involving null
+      console.log(null > 0);  // false: null is treated as 0 in numerical comparisons
+      console.log(null < 0);  // false: null is treated as 0, which is not less than 0
+      console.log(null >= 0); // true: null is treated as 0, and 0 is equal to 0
+
+      // Comparisons involving undefined
+      console.log(undefined == 0); // false: undefined is only loosely equal to null, not 0
+      console.log(undefined < 0);  // false: undefined cannot be compared meaningfully with numbers
+      console.log(undefined > 0);  // false: same reason as above
+
+      // Strict equality check
+      console.log("2" === 2); // false: strict equality checks both value and type
+    </script>
+  </body>
+</html>

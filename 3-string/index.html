@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // JavaScript String Methods Example
+
+      // 1. Declaring a String
+      let str = "Hello, JavaScript!";
+
+      // 2. Length Property
+      console.log("Length of string:", str.length); // Returns the length of the string
+
+      // 3. toUpperCase() and toLowerCase()
+      console.log("Uppercase:", str.toUpperCase()); // Converts to uppercase
+      console.log("Lowercase:", str.toLowerCase()); // Converts to lowercase
+
+      // 4. indexOf()
+      console.log("Index of 'JavaScript':", str.indexOf("JavaScript")); // Finds the position of a substring
+
+      // 5. includes()
+      console.log("Does it include 'Java'? ", str.includes("Java")); // Checks if a substring exists
+
+      // 6. slice()
+      console.log("Slice from index 7:", str.slice(7)); // Extracts part of a string
+
+      // 7. replace()
+      console.log(
+        "Replacing 'JavaScript' with 'World':",
+        str.replace("JavaScript", "World")
+      ); // Replaces part of a string
+
+      // 8. split()
+      let words = str.split(" "); // Splits string into an array based on space
+      console.log("Split into words:", words);
+
+      // 9. trim()
+      let paddedStr = "  Extra spaces  ";
+      console.log("Trimmed:", paddedStr.trim()); // Removes leading and trailing spaces
+
+      // 10. charAt()
+      console.log("Character at index 4:", str.charAt(4)); // Returns character at specified index
+
+      // 11. concat()
+      console.log("Concatenation:", str.concat(" Let's learn more!")); // Combines strings
+
+      // 12. repeat()
+      console.log("Repeated string:", str.repeat(3)); // Repeats the string multiple times
+
+      // 13. startsWith() and endsWith()
+      console.log("Starts with 'Hello':", str.startsWith("Hello")); // Checks if string starts with specified text
+      console.log("Ends with '!':", str.endsWith("!")); // Checks if string ends with specified text
+
+      // 14. substr() (deprecated but still used)
+      console.log("Substring from index 7 (length 10):", str.substr(7, 10)); // Extracts substring
+
+      // Summary:
+      // This file contains various JavaScript string methods that help manipulate, search, and modify strings efficiently.
+    </script>
+  </body>
+</html>
